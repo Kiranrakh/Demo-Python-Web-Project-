@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact | Flask Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/about">About</a> |
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <section>
+        {% if success %}
+            <p>Thank you, {{ name }}! We have received your message.</p>
+        {% else %}
+            <form action="/contact" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <textarea name="message" placeholder="Your Message" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        {% endif %}
+    </section>
+</body>
+</html>
