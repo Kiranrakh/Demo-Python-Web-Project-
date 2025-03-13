@@ -2,10 +2,15 @@
 
 Explanation:
 ✅ Uses Python 3.10 as the base image
+
 ✅ Sets the working directory to /app
+
 ✅ Copies all files from your project to the container
+
 ✅ Installs dependencies from requirements.txt
+
 ✅ Exposes port 5000
+
 ✅ Runs the Flask app using gunicorn for production
 
 How to Build and Run:
