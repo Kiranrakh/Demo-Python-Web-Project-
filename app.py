@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -12,12 +12,12 @@ def about():
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
+    success = False
+    name = ""
     if request.method == 'POST':
-        name = request.form['name']
-        email = request.form['email']
-        message = request.form['message']
-        return render_template("contact.html", success=True, name=name)
-    return render_template("contact.html", success=False)
+        name = request.form.get('name')
+        success = True
+    return render_template("contact.html", success=success, name=name)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
