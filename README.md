@@ -1,12 +1,5 @@
 # Demo-Python-Web-Project-
 
-
-docker build -t flask-app .
-docker run -p 5000:5000 flask-app
-
-
-
-
 Explanation:
 ✅ Uses Python 3.10 as the base image
 ✅ Sets the working directory to /app
@@ -16,9 +9,7 @@ Explanation:
 ✅ Runs the Flask app using gunicorn for production
 
 How to Build and Run:
-bash
-Copy
-Edit
+
 # Build the Docker image
 docker build -t flask-app .
 
