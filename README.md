@@ -15,4 +15,6 @@ docker build -t flask-app .
 
 # Run the container
 docker run -p 5000:5000 flask-app
+
+
 This will start your Flask application inside a Docker container, accessible at http://localhost:5000/. 🚀
