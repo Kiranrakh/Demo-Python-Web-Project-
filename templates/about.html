@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About | Flask Web App</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Kiran Rakh - AWS Cloud & DevOps Engineer">
+    <title>About | Kiran Rakh</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>About</h1>
+
+    <header class="header">
+        <h1>About Me</h1>
+        <p>Learn more about my journey and expertise.</p>
         <nav>
-            <a href="/">Home</a> |
-            <a href="/about">About</a> |
-            <a href="/contact">Contact</a>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <section>
-        <p>This application is built using Flask and can be deployed in Docker & Kubernetes.</p>
-    </section>
+
+    <div class="container">
+        <section class="fade-in">
+            <h2>Who Am I?</h2>
+            <div class="card">
+                <p>I am a passionate AWS Cloud & DevOps Engineer with hands-on experience in automating cloud deployments, optimizing cloud infrastructure, and implementing DevOps methodologies. My expertise includes AWS, Docker, Kubernetes, Terraform, and Jenkins.</p>
+            </div>
+        </section>
+
+        <section class="fade-in">
+            <h2>Education</h2>
+            <div class="card">
+                <p><strong>Bachelor of Engineering (B.E) in Electronics and Telecommunication</strong></p>
+                <p>JSPM’s Imperial College of Engineering and Research, Pune (2020-2024)</p>
+                <p><strong>CGPA:</strong> 7.33/10</p>
+            </div>
+        </section>
+
+        <section class="fade-in">
+            <h2>My Mission</h2>
+            <div class="card">
+                <p>My goal is to leverage cloud technologies and automation tools to create highly scalable, secure, and cost-efficient solutions for businesses. I thrive in solving complex challenges and continuously learning new technologies.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 Kiran Rakh | <a href="https://www.linkedin.com/in/kiran-rakh-b644b6248" target="_blank">LinkedIn</a></p>
+    </footer>
+
 </body>
 </html>
