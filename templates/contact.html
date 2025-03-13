@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact | Flask Web App</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Kiran Rakh - AWS Cloud & DevOps Engineer">
+    <title>Contact | Kiran Rakh</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Contact Us</h1>
+
+    <header class="header">
+        <h1>Contact Me</h1>
+        <p>Let's connect and collaborate.</p>
         <nav>
-            <a href="/">Home</a> |
-            <a href="/about">About</a> |
-            <a href="/contact">Contact</a>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <section>
-        {% if success %}
-            <p>Thank you, {{ name }}! We have received your message.</p>
-        {% else %}
-            <form action="/contact" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required><br>
-                <input type="email" name="email" placeholder="Your Email" required><br>
-                <textarea name="message" placeholder="Your Message" required></textarea><br>
-                <button type="submit">Submit</button>
-            </form>
-        {% endif %}
-    </section>
+
+    <div class="container">
+        <section class="fade-in" style="text-align: center;">
+            <h2>Get in Touch</h2>
+            <p>If you're looking for a passionate AWS Cloud & DevOps Engineer, feel free to reach out to me!</p>
+            <a class="contact-btn" href="mailto:kiranrakh155@gmail.com">Email Me</a>
+        </section>
+
+        <section class="fade-in">
+            <h2>Connect on Social Media</h2>
+            <div class="card">
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kiran-rakh-b644b6248" target="_blank">Kiran Rakh</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/KiranRakh" target="_blank">github.com/KiranRakh</a></p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 Kiran Rakh | <a href="https://www.linkedin.com/in/kiran-rakh-b644b6248" target="_blank">LinkedIn</a></p>
+    </footer>
+
 </body>
 </html>
